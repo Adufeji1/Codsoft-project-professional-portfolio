@@ -5,11 +5,19 @@
 }
 
 :root {
+
+
+    --primary-color: white;
+    --secondary-color: rgb(116, 144, 157);
+    --neutral-color: rgb(55, 7, 86);
+    --other-color: rgb(182, 190, 130);
+    font-family: 'Roboto', sans-serif;
+/*     
     --primary-color: hsla(56, 85%, 89%, 1);
     --secondary-color: hsla(56, 85%, 74%, 1);
     --neutral-color: hsla(56, 84%, 15%, 1);
     --other-color: hsla(239, 94%, 19%, 1);
-    --font-family: font-family: 'Roboto', sans-serif;
+    --font-family: font-family: 'Roboto', sans-serif; */
 
 }
 
@@ -147,7 +155,7 @@
 
 /* project styling */
 .project_bg {
-    height: 1300px;
+    height: 1000px;
     background-color: var(--primary-color);
     position: relative;
 }
@@ -168,6 +176,8 @@
     position: absolute;
     left: 100px;
     margin-top: 100px;
+    border-radius: 30px;
+    border: 10px solid var(--secondary-color);
 }
 
 .first_project_paragraph {
@@ -213,6 +223,8 @@
     position: absolute;
     right: 200px;
     margin-top: 100px;
+    border-radius: 30px;
+    border: 10px solid var(--secondary-color);
 }
 
 .second_project_paragraph {
@@ -237,8 +249,10 @@
     height: 350px;
     width: 300px;
     position: absolute;
-    bottom: 200px;
+    bottom: 50px;
     left: 450px;
+    border-radius: 30px;
+    border: 10px solid var(--secondary-color);
 }
 
 .third_project_paragraph {
@@ -261,4 +275,92 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.project_buttom {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* blog section */
+
+.blog_bg {
+    background-color: var(--primary-color);
+    height: 800px;
+}
+
+.blog-heading {
+    color: var(--neutral-color);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.firstblog {
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    left: 100px;
+    margin-top: 50px;
+}
+
+.buttonblog {
+    background-color: var(--neutral-color);
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    right: 200px;
+    margin-top: 200px;
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.blogtheme {
+    font-size: 20px;
+    position: absolute;
+    right: 50px;
+    margin-top: 50px;
+}
+
+
+/* contact */
+.contact_bg {
+    background-color: var(--neutral-color);
+    height: 400px;
+}
+
+.getintouch,
+.text,
+.spantext
+ {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.getintouch {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.spantext {
+    font-size: 20px;
+    color: var(--other-color);
+    margin-top: 20px;
+}
+
+.btnwrapper, .messagebtn {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerbg {
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-top: 65px;
 }
