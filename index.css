@@ -11,6 +11,8 @@
     --secondary-color: rgb(116, 144, 157);
     --neutral-color: rgb(55, 7, 86);
     --other-color: rgb(182, 190, 130);
+    --consistent-color: rgba(0, 0, 0, 0.936);
+    --supplementary-color: rgb(73, 212, 240);
     font-family: 'Roboto', sans-serif;
 /*     
     --primary-color: hsla(56, 85%, 89%, 1);
@@ -23,23 +25,24 @@
 
 .navigation {
     height: 100px;
-    background-color: var(--primary-color);
-    border-bottom: 10px solid var(--neutral-color);
+    background-color: var(--consistent-color);
+    border-bottom: 2px solid var(--supplementary-color);
     overflow: hidden;
-    
+    position: fixed;
+    z-index: 50;
 }
 
 .logo_nav {
     position: relative;
-    left: 100px;
-    top: 20px;
+    left: 10px;
+    top: 10px;
 }
 
 .logo_img {
-  height: 70px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  box-shadow:  10px 5px 5px 5px var(--neutral-color);
+  box-shadow:  5px 3px 3px 3px var(--supplementary-color);
 }
 
 .navlist_item {
@@ -49,43 +52,58 @@
 
 .unordered_listitem, li {
     font-size: 20px;
-    list-style-type: none;
-    color: var(--neutral-color);
+    color: var(--supplementary-color);
     margin-left: 40px;
     display: flex;
     margin-top: -20px;
-    text-shadow: 1px 1px 2px var(--primary-color), 0 0 25px var(--other-color), 0 0 5px var(--secondary-color);
+    text-shadow: 1px 1px 2px var(--primary-color), 0 0 25px var(--other-color), 0 0 5px var(--supplementary-color);
     cursor: pointer;
-    transition: color 0.3s ease-in-out;
 }
 
 .introduction_wrapper {
-    background-color: var(--primary-color);
-    height: 400px;
+    background-image: url(Images/latest.gif);
+    background-size: cover;
+    height: 700px;
 }
 .introduction_section {
     position: absolute;
     left: 100px;
-    margin-top: 50px;
+    top: 150px;
     font-family: var(--font-family);
+    animation: typing 10s steps(50) infinite;
 }
 
 .firstparagraph_introduction {
     font-size: 20px;
+    color: var(--supplementary-color);
+    animation: typing 10s steps(50) infinite;
+
 }
 
 .lastparagraph_introduction {
     font-size: 20px;
+    color: var(--supplementary-color);
+    width: 500px;
 }
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 
 
 .firstheading_introduction {
     font-size: 70px;
     width: 300px;
+    color: var(--supplementary-color);
 }
 
 .resume_btn {
-    background-color: var(--neutral-color);
+    background-color: var(--supplementary-color);
     height: 50px;
     width: 150px;
     color: var(--primary-color);
@@ -100,18 +118,18 @@
 } */
 
 .profileimage {
-    height: 300px;
+    height: 500px;
     position: absolute;
-    right: 250px;
-    margin-top: 20px;
+    right: 100px;
+    margin-top: 100px;
     border-radius: 100px;
     border: var(--neutral-color);
-    box-shadow:  10px 5px 5px 5px var(--neutral-color);
+    box-shadow:  5px 2px 5px 2px var(--supplementary-color);
 
 }
 
 .about_bg {
-    background-color: var(--neutral-color);
+    background-color: black;
     height: 600px;
 }
 
@@ -156,7 +174,7 @@
 /* project styling */
 .project_bg {
     height: 1000px;
-    background-color: var(--primary-color);
+    background-color: black;
     position: relative;
 }
 
@@ -327,28 +345,31 @@
 
 /* contact */
 .contact_bg {
-    background-color: var(--neutral-color);
+    background-color: var(--consistent-color);
     height: 400px;
+    position: relative;
 }
 
 .getintouch,
 .text,
 .spantext
  {
-    color: var(--primary-color);
-    text-align: center;
+    color: var(--supplementary-color);
     font-family: var(--font-family);
+    position: absolute;
+    left: 70px;
+    top: 100px;
 }
 
 .getintouch {
-    padding-top: 50px;
-    padding-bottom: 30px;
     font-size: 20px;
+    position: absolute;
+    top: 70px;
 }
 
 .spantext {
     font-size: 20px;
-    color: var(--other-color);
+    color: var(--supplementary-color);
     margin-top: 20px;
 }
 
